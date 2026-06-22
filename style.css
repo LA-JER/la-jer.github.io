@@ -332,7 +332,7 @@ align-items:start;
 .project img{
 
 border:2px solid var(--c4);
-
+max-width: 850px;
 }
 
 .project div{
