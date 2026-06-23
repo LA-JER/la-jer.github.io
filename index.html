@@ -3,93 +3,74 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <title>Josue Estin | Game Design Portfolio</title>
-
 <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
-
 <header>
-
 <div class="title-block">
 <h1>Josue Estin</h1>
 <p>GAME DESIGNER</p>
 </div>
-
 <nav id="chapterNav">
-
 <a href="#intro">INTRO</a>
 <a href="#chapter1">PROJECTS</a>
 <a href="#chapter2">PROCESS</a>
 <a href="#chapter3">ABOUT</a>
-
 </nav>
-
 </header>
-
 <section class="hero" id="intro">
-
 <img src="images/hero.jpg">
-
 <div class="hero-text">
-
-
 <h1>
 Hi and welcome to my website! I am a game designer who has a passion for games, digital or tabletop. I strive to create fast fun systems that bring players together to form positive communities.
 </h1>
-
 </div>
-
 </section>
-
 <main>
-
 <section id="chapter1" class="chapter">
-
 <div class="chapter-label">
 CHAPTER 01
 </div>
-
 <h2>My Projects</h2>
-
 <article class="project">
-
 <img src="https://img.itch.zone/aW1hZ2UvNDY0NDUzNy8yNzY3ODI3NS5wbmc=/794x1000/0zORte.png">
-
 <div>
-
 <h3>Need to Go: Again!</h3>
-
 <div class="meta">
 ROLE — Lead Writer / Lead Programmer
 </div>
-
 <p>
 Need to Go: Again! is a lighthearted, comedic branching narrative game 
 that explores a broke college student desperately searching for a public restroom. 
 Built using Unity + Yarn Spinner, this project was a design exercise in narrative choices and branching paths.
 </p>
-
 </div>
-
 <iframe frameborder="0" src="https://itch.io/embed/4644537?bg_color=d5d3de&amp;fg_color=331D2C&amp;link_color=331D2C" width="552" height="167"><a href="https://aquastick.itch.io/need-to-go-again">Need to Go: Again! by aquastick</a></iframe>
 </article>
 
+<div class="project-details">
+<div class="detail-grid">
+<img src="Screenshot 2026-06-22 172233.png" alt="Need to Go: Again! dialogue tree in Yarn Spinner">
+<img src="images/ntg-detail-02.jpg" alt="Need to Go: Again! early UI sketch">
+<img src="images/ntg-detail-03.jpg" alt="Need to Go: Again! branching path map">
+</div>
+<p>
+The hardest part of this project wasn't writing the jokes, it was making sure every choice felt like it mattered. 
+Early drafts let players "win" no matter what they picked, which flattened the whole point of a branching narrative. 
+I rebuilt the dialogue graph around three real failure states and mapped every node by hand in Yarn Spinner before writing 
+a single line of final dialogue, which made it much easier to spot dead-end branches and dialogue that contradicted 
+earlier choices.
+</p>
+</div>
+
 <article class="project">
-
-<img src="gunRules.png">
-
+<img src="IMG_1774.jpeg">
 <div>
-
 <h3>Gun With It!</h3>
-
 <div class="meta">
 ROLE — Systems Design
 </div>
-
 <p>
 Gun With It! is a fast-paced, simultaneous combat card game set in a gritty, post-apocalyptic wasteland controlled by the tyrannical El Feo. 
 Players must strategize between using item cards or weapon cards in order to be the last one standing. 
@@ -103,65 +84,61 @@ As this is a tabletop game, I learned a lot in the process of making this game. 
 aren't  exactly pretty to look at. I had to learn the physical card-crafting workflow for this and am very proud of the end result (Though I had to print several re-tries) 
 </p>
 </div>
-
 </article>
 
+<div class="project-details">
+<div class="detail-grid">
+<img src="gunRules.png" alt="Gun With It! rules sheet">
+<img src="Screenshot 2026-06-08 125639.png" alt="Gun With It! card layout iterations">
+<img src="wasteland event cards second page.png" alt="Gun With It! printable layout">
+</div>
+<p>
+The index-card prototypes went through many many rounds before a single card got real art. The "simultaneous reveal" 
+mechanic was the riskiest part of the design, yet it turned out to be the most engaging. During playtests, players often counted down together,
+upping the excitement of the round. However, because all cards are revealed at the same time, this meant players spent more time parsing what just 
+happened. We ended up color-coding the card backs by category 
+(item vs. weapon) so players could read the game-state at a glance, which is a trick I will now reach for in 
+future tabletop prototypes.
+</p>
+</div>
+
 </section>
-
 <section id="chapter2" class="chapter">
-
 <div class="chapter-label">
 CHAPTER 02
 </div>
-
 <h2>Process</h2>
-
 <div class="essay">
-
 <p>
 I approach game design through
 rapid iteration,
 playtesting,
 and documentation.
 </p>
-
 <p>
 Include sketches,
 wireframes,
 design notes,
 and system diagrams.
 </p>
-
 </div>
-
 </section>
-
 <section id="chapter3" class="chapter">
-
 <div class="chapter-label">
 CHAPTER 03
 </div>
-
 <h2>About</h2>
-
 <p>
 Short biography.
 What kinds of games you design.
 Resume links.
 Contact.
 </p>
-
 </section>
-
 </main>
-
 <footer>
-
 LAST UPDATED — 2026
-
 </footer>
-
 <script src="script.js"></script>
-
 </body>
 </html>
