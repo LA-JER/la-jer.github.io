@@ -54,7 +54,7 @@ body::before {
   pointer-events: none;
   background-image: radial-gradient(grey 1px, transparent 1px);
   background-size: 16px 16px;
-  opacity: 0.2;
+  opacity: 0.3;
 }
 /* ---------- HEADER ---------- */
 header{
@@ -223,24 +223,56 @@ font-size:11px;
 letter-spacing:4px;
 margin-bottom:18px;
 color:var(--c1);
-}
-.detail-grid{
+}.detail-grid{
+
 display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:20px;
-margin-bottom:32px;
+
+grid-template-columns:
+repeat(
+auto-fit,
+minmax(240px,1fr)
+);
+
+gap:22px;
+
+align-items:start;
+
 }
+
 .detail-grid img{
-max-width:320px;
-aspect-ratio:4/3;
-object-fit:cover;
-border:2px solid var(--c4);
+
+width:100%;
+
+height:auto;
+
+/* preserves original ratio */
+
 display:block;
+
+border:2px solid var(--c4);
+
+padding:10px;
+
+background:
+rgba(255,255,255,.35);
+
 }
+
+/* slight visual rhythm */
+
+.detail-grid img:nth-child(odd){
+
+margin-top:18px;
+
+}
+
 .detail-grid img:hover{
-filter:
-brightness(.95)
-contrast(1.05);
+
+transform:
+translateY(-2px);
+
+transition:.15s;
+
 }
 .project-details p{
 line-height:1.9;
